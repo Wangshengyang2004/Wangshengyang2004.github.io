@@ -1,0 +1,19 @@
+# Site settings
+title:              Shengyang Wang
+email:              wangshengyang2004@gmail.com
+description:        "Robotics portfolio of Shengyang Wang, M.S. in Robotics, Northwestern University"
+url:                "https://wangshengyang2004.github.io"
+baseurl:            ""
+
+# File structure settings
+image_path:         /public/images
+
+# Build settings
+markdown:           kramdown
+permalink:          pretty
+
+# Collection definitions and settings
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/

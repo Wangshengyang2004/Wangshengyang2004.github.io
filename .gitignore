@@ -1,0 +1,8 @@
+_site
+*~
+*.sass-cache*
+build/
+serve/
+
+_site/
+.jekyll-cache/
