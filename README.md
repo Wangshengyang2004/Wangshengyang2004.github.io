@@ -6,7 +6,7 @@ Add your portrait to `public/images/` and set `profile_image` in `_config.yml` t
 
 The `github_url`, `linkedin_url`, and `google_scholar_url` settings in `_config.yml` control the homepage's social links. Leave `google_scholar_url` blank until you have a profile URL; its icon will appear without a link in the meantime.
 
-Edit `_includes/publications.html` to update the selected publications on both the homepage and About page.
+Edit `_includes/publications.html` to update the selected publications on the homepage. The thumbnails are cropped from figures in the linked papers.
 
 ## Jekyll overview
 

@@ -4,17 +4,16 @@ path: /about
 url: index.html
 ---
 
-## Overview
-I am a Master of Science in Robotics student at Northwestern University (Fall 2026, expected December 2027). I completed my undergraduate studies at Duke Kunshan University (B.S. Data Science, DKU; B.S. Interdisciplinary Studies, Duke).
+## Hi, I'm Shengyang!
 
-My work centers on learning-based control for aerial and manipulation robots: reinforcement learning, differentiable simulation, and LLM-guided reward design and agent-based control. I have trained vision-conditioned quadrotor policies in differentiable simulation and deployed learned controllers on physical UAVs through ROS.
+I'm a master's student in [Northwestern University's MS in Robotics program](https://www.mccormick.northwestern.edu/robotics/), based in Evanston, Illinois. Before Northwestern, I studied data science at Duke Kunshan University and interdisciplinary studies at Duke University.
 
-### Research interests
-* Quadrotor control and sim-to-real transfer
-* Reinforcement learning and differentiable simulation
-* LLM agents for robot control and reward design
-* Manipulation, dexterous hands, and robot foundation models
+You can also browse [Northwestern's public MSR student directory](https://www.mccormick.northwestern.edu/robotics/people/current-students/index.html).
 
-### Publications
+## A little beyond robotics
 
-{% include publications.html %}
+I enjoy photography and connecting with people across cultures. I speak both English and Chinese, so feel free to say hello in either.
+
+## Say hello
+
+You can find my email and social links on the [contact page]({{ '/contact/' | relative_url }}).

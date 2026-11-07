@@ -29,6 +29,16 @@ html body main#portfolio .profile-intro {
   font-weight: 600;
 }
 
+.profile-affiliation a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+.profile-affiliation a:focus-visible {
+  outline: 2px solid #4e2a84;
+  outline-offset: 4px;
+}
+
 .profile-summary {
   max-width: 62ch;
   margin-top: 18px;
@@ -116,6 +126,45 @@ html body main#portfolio .research-section {
   margin-top: 28px;
 }
 
+.publication.has-media {
+  display: grid;
+  grid-template-columns: minmax(120px, 170px) minmax(0, 1fr);
+  gap: 18px;
+  align-items: start;
+}
+
+.publication-media {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  aspect-ratio: 16 / 9;
+  background: #efedf4;
+}
+
+.publication-media img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.publication-media-label {
+  position: absolute;
+  bottom: 8px;
+  left: 8px;
+  padding: 5px 8px;
+  background: #292630;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 600;
+}
+
+.publication-media:focus-visible {
+  outline: 2px solid #4e2a84;
+  outline-offset: 4px;
+}
+
 .publication-title {
   font-size: 1rem;
   line-height: 1.45;
@@ -159,22 +208,25 @@ html body main#portfolio .research-section {
   font-size: 0.93rem;
 }
 
-html body main#about section#about-content ul.publication-list {
-  margin-left: 0;
-}
-
-html body main#about section#about-content .publication-list p {
-  margin: 6px 0 0;
-}
-
 html body main#about section#about-content img#portrait {
   aspect-ratio: 1;
   object-fit: cover;
 }
 
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 900px) {
   html body main#portfolio .research-section {
     grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+@media screen and (max-width: 520px) {
+  .publication.has-media {
+    grid-template-columns: minmax(0, 1fr);
+    gap: 12px;
+  }
+
+  .publication-media {
+    max-width: 360px;
   }
 }
 
