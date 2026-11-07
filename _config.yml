@@ -4,6 +4,10 @@ email:              wangshengyang2004@gmail.com
 description:        "Robotics portfolio of Shengyang Wang, M.S. in Robotics, Northwestern University"
 url:                "https://wangshengyang2004.github.io"
 baseurl:            ""
+profile_image:      /public/images/profile-placeholder.svg
+github_url:         https://github.com/Wangshengyang2004
+linkedin_url:       https://www.linkedin.com/in/shengyang-wang-98b009255/
+google_scholar_url: "https://scholar.google.com/citations?user=AGsPheoAAAAJ&hl=en"
 
 # File structure settings
 image_path:         /public/images

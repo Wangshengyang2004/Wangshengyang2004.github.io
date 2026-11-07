@@ -2,7 +2,6 @@
 layout: about
 path: /about
 url: index.html
-image: /public/images/placeholder.svg
 ---
 
 ## Overview
@@ -17,5 +16,5 @@ My work centers on learning-based control for aerial and manipulation robots: re
 * Manipulation, dexterous hands, and robot foundation models
 
 ### Publications
-* F. Li, **S. Wang**, et al. *Simple but Stable, Fast and Safe: Achieve End-to-end Control by High-Fidelity Differentiable Simulation.* 2026. [arXiv](https://arxiv.org/abs/2604.10548)
-* F. Li, **S. Wang**, et al. *StableTracker: Learning to Stably Track Target via Differentiable Simulation.* 2025. [arXiv](https://arxiv.org/abs/2509.14147)
+
+{% include publications.html %}

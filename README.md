@@ -1,6 +1,12 @@
 # MSR Student Portfolio Template
 
+## Homepage settings
 
+Add your portrait to `public/images/` and set `profile_image` in `_config.yml` to its path. The homepage and About page both use this image and display it as a square.
+
+The `github_url`, `linkedin_url`, and `google_scholar_url` settings in `_config.yml` control the homepage's social links. Leave `google_scholar_url` blank until you have a profile URL; its icon will appear without a link in the meantime.
+
+Edit `_includes/publications.html` to update the selected publications on both the homepage and About page.
 
 ## Jekyll overview
 
