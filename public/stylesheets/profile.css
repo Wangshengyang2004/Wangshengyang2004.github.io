@@ -149,17 +149,6 @@ html body main#portfolio .research-section {
   object-fit: cover;
 }
 
-.publication-media-label {
-  position: absolute;
-  bottom: 8px;
-  left: 8px;
-  padding: 5px 8px;
-  background: #292630;
-  color: #fff;
-  font-size: 0.78rem;
-  font-weight: 600;
-}
-
 .publication-media:focus-visible {
   outline: 2px solid #4e2a84;
   outline-offset: 4px;
