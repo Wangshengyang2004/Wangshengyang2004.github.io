@@ -1,6 +1,8 @@
 # Site settings
 title:              Shengyang Wang
-email:              wangshengyang2004@gmail.com
+email_user:         wangshengyang2004
+email_provider:     gmail
+email_tld:          com
 description:        "Robotics portfolio of Shengyang Wang, M.S. in Robotics, Northwestern University"
 url:                "https://wangshengyang2004.github.io"
 baseurl:            ""

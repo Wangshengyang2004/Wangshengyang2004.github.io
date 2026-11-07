@@ -84,9 +84,6 @@ a.social-link:focus-visible {
 }
 
 html body main#portfolio .research-section {
-  display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
-  gap: 32px clamp(32px, 4vw, 56px);
   margin: 0 auto 54px;
   padding-top: 36px;
   border-top: 1px solid #dedbe5;
@@ -98,7 +95,7 @@ html body main#portfolio .research-section {
 }
 
 .research-intro p {
-  max-width: 32ch;
+  max-width: 68ch;
   margin-top: 16px;
   color: #45424b;
   line-height: 1.65;
@@ -112,6 +109,10 @@ html body main#portfolio .research-section {
   text-underline-offset: 3px;
 }
 
+.research-publications {
+  margin-top: 36px;
+}
+
 .research-publications h3 {
   margin-bottom: 18px;
   color: #68636f;
@@ -123,23 +124,29 @@ html body main#portfolio .research-section {
 }
 
 .publication + .publication {
-  margin-top: 28px;
+  margin-top: 42px;
+  padding-top: 32px;
+  border-top: 1px solid #dedbe5;
 }
 
 .publication.has-media {
   display: grid;
-  grid-template-columns: minmax(120px, 170px) minmax(0, 1fr);
-  gap: 18px;
-  align-items: start;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 16px;
 }
 
 .publication-media {
-  position: relative;
   display: block;
   overflow: hidden;
+  width: 100%;
+  max-width: 720px;
   margin: 0;
   aspect-ratio: 16 / 9;
   background: #efedf4;
+}
+
+.publication-details {
+  max-width: 80ch;
 }
 
 .publication-media img {
@@ -155,7 +162,7 @@ html body main#portfolio .research-section {
 }
 
 .publication-title {
-  font-size: 1rem;
+  font-size: 1.12rem;
   line-height: 1.45;
 }
 
@@ -202,28 +209,80 @@ html body main#about section#about-content img#portrait {
   object-fit: cover;
 }
 
-@media screen and (max-width: 900px) {
-  html body main#portfolio .research-section {
-    grid-template-columns: minmax(0, 1fr);
-  }
-}
-
-@media screen and (max-width: 520px) {
-  .publication.has-media {
-    grid-template-columns: minmax(0, 1fr);
-    gap: 12px;
-  }
-
-  .publication-media {
-    max-width: 360px;
-  }
-}
-
 html body main#portfolio > h2.page-header {
   width: 80%;
   margin: 0 auto 16px;
   color: #222;
   font-size: 1.65rem;
+}
+
+html body main#portfolio div#portfolio-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  overflow: visible;
+}
+
+html body main#portfolio div#portfolio-gallery div.container {
+  display: block;
+  width: auto;
+  min-width: 0;
+  margin-bottom: 0;
+}
+
+html body main#portfolio div#portfolio-gallery div.container:not(:nth-child(4n)),
+html body main#portfolio div#portfolio-gallery div.container:not(:nth-child(2n)) {
+  margin-right: 0;
+}
+
+html body main#portfolio div#portfolio-gallery div.container div.inner-text {
+  box-sizing: border-box;
+  max-height: none;
+  padding: 12px 8px;
+}
+
+#portfolio-gallery .placeholder-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #f1eff4;
+  color: #514b5c;
+}
+
+#portfolio-gallery .placeholder-symbol {
+  margin-bottom: 12px;
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+}
+
+#portfolio-gallery .placeholder-content p {
+  padding: 0 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+html body footer a {
+  color: inherit;
+  text-underline-offset: 3px;
+}
+
+html body footer a:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+@media screen and (max-width: 800px) {
+  html body main#portfolio div#portfolio-gallery {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media screen and (max-width: 520px) {
+  html body main#portfolio div#portfolio-gallery {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media screen and (max-width: 600px) {

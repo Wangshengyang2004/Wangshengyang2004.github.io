@@ -8,6 +8,10 @@ The `github_url`, `linkedin_url`, and `google_scholar_url` settings in `_config.
 
 Edit `_includes/publications.html` to update the selected publications on the homepage. The thumbnails are cropped from figures in the linked papers.
 
+The portfolio shows up to six projects, sorted by filename. Empty slots appear as placeholders until you add projects under `_projects/`.
+
+The contact email is assembled from the `email_user`, `email_provider`, and `email_tld` settings and displayed with `[at]` and `[dot]` to deter basic scraping.
+
 ## Jekyll overview
 
 ### Built with Jekyll

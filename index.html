@@ -48,15 +48,15 @@ title: Portfolio
 	<section>
 		<div id="portfolio-gallery">
 			{% assign sorted_pages = site.projects | sort:"path" %}
-			{% for project in sorted_pages %}
+			{% for project in sorted_pages limit:6 %}
 			<div class="container">
-				<div class="aspect-ratio-keeper"> </div>
+				<div class="aspect-ratio-keeper" aria-hidden="true"></div>
 				<div class="content">
 					<a href="{{ site.baseurl }}{{ project.url }}">
 						<span class="link-spanner"></span>
 						<div class="image-container">
-							<div class="image-vertical-align-box" >
-								<img class="inner" src="{{ project.image }}">
+							<div class="image-vertical-align-box">
+								<img class="inner" src="{{ project.image }}" alt="">
 							</div>
 						</div>
 						<div class="inner-text">
@@ -66,6 +66,18 @@ title: Portfolio
 				</div>
 			</div>
 			{% endfor %}
+			{% assign empty_slots = 6 | minus: sorted_pages.size %}
+			{% if empty_slots > 0 %}
+			{% for slot in (1..empty_slots) %}
+			<div class="container project-placeholder">
+				<div class="aspect-ratio-keeper" aria-hidden="true"></div>
+				<div class="content placeholder-content">
+					<span class="placeholder-symbol" aria-hidden="true">+</span>
+					<p>Project coming soon</p>
+				</div>
+			</div>
+			{% endfor %}
+			{% endif %}
 		</div>
 	</section>
 </main>
